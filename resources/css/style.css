@@ -263,7 +263,7 @@ header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.97);
     box-shadow: 0 2px 2px #efefef;
-    z-index: 9999;
+    z-index: 9999;---
 }
 
 .sticky .main-nav li a:link, 
@@ -318,7 +318,7 @@ header {
     height: auto;
     -webkit-transform: scale(1.15);
     transform: scale(1.15);
-    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    -webkit- 0: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
@@ -608,4 +608,25 @@ footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+/* ------------------------------------------ */
+/* Animations */
+/* ------------------------------------------ */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated, 
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }

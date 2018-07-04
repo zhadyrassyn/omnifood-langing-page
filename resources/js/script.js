@@ -30,4 +30,37 @@ $(document).ready(function() {
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
 });
+    
+    /* Animations on scroll */
+    new Waypoint({
+      element: $('.js--wp-1'),
+      handler: function() {
+        $('.js--wp-1').addClass('animated fadeIn');
+      }, 
+        offset: '50%'
+    });
+    
+    new Waypoint({
+      element: $('.js--wp-2'),
+      handler: function() {
+        $('.js--wp-2').addClass('animated fadeInUp');
+      }, 
+        offset: '50%'
+    });
+    
+    new Waypoint({
+      element: $('.js--wp-3'),
+      handler: function() {
+        $('.js--wp-3').addClass('animated fadeIn');
+      }, 
+        offset: '50%'
+    });
+    
+    new Waypoint({
+      element: $('.js--wp-4'),
+      handler: function() {
+        $('.js--wp-4').addClass('animated pulse');
+      }, 
+        offset: '50%'
+    });
 });
